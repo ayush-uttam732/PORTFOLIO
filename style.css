@@ -67,7 +67,9 @@ body {
   background-color: #f7f9fc;
   padding-top: 80px;
   /* navbar height spacing */
+  
 }
+
 
 .navbar-nav .nav-link {
   margin-left: 20px;
@@ -104,14 +106,17 @@ body {
 
 
 .btn-primary {
-  background-color: #0d6efd;
+  background-color: #5b636f;
   border: none;
   transition: 0.3s ease;
+    border: 2px solid yellow !important;
+
 }
 
 .btn-primary:hover {
   background-color: #0056d2;
 }
+
 
 .card-title {
   font-weight: 600;
@@ -170,6 +175,9 @@ h1 {
 
 .card:hover {
   transform: translateY(-5px);
+}
+.skill-card{
+  padding: 5%;
 }
 
 /* skill containor */
@@ -318,3 +326,39 @@ h1 {
     width: 5ch;
   }
 }
+
+
+
+/* wave css */
+.wave-text span {
+    display: inline-block;
+    font-size: 3rem;
+    animation: wave 2s ease-in-out infinite;
+}
+
+.wave-text span:nth-child(1) {
+    animation-delay: 0s;
+}
+.wave-text span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+.wave-text span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+.wave-text span:nth-child(4) {
+    animation-delay: 0.6s;
+}
+
+@keyframes wave {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+
+
+
+
