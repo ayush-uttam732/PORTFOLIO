@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -6,17 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ayush Uttam |Web Developer & BCA Student</title>
   <link rel="stylesheet" href="style.css">
-  <!-- bootsrtap link -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 
 
-  <!-- aos animation -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 
-<body>
+<body> -->
 
   <!-- <section>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -80,7 +78,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ayush Uttam | Web Developer & BCA Student</title>
     <link rel="stylesheet" href="style.css" />
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
   </head>
 
   <body>
@@ -110,9 +112,10 @@
     <section class="hero-section d-flex align-items-center" id="home">
       <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-5">
         <div class="hero-text">
-          <h1 class="mb-2" data-aos="flip-left">Hi, I’m <span class="text-primary">Ayush 👋</span></h1>
-          <p class="lead">I craft responsive and interactive websites using HTML, CSS, JavaScript & Bootstrap.  
-                 <br>   Currently learning modern backend technologies and cloud tools.</p>
+          <h1 class="mb-2" data-aos="fade-right" data-aos-once="false" data-aos-duration="1000">Hi, I’m <span class="text-primary"> Ayush 👋</span></h1>
+          <p class="lead">I craft responsive and interactive websites using HTML, CSS, JavaScript & Bootstrap.
+            <br> Currently learning modern backend technologies and cloud tools.
+          </p>
           <a href="projects.html" class="btn btn-primary mt-3 px-4">View Projects</a>
         </div>
         <div class="hero-img">
@@ -123,14 +126,19 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-5 bg-white">
-      <div class="container">
-        <div class="card shadow border-0">
-          <div class="container">
+    <section id="about-home" class="py-3 bg-white">
+      <div class="container ">
+        <div class="card shadow border-0" data-aos="fade-right" data-aos-duration="1000" data-aos-once="false">
+          <div class="container home-card" >
             <h3 class="card-title mb-3 text-primary">About Me</h3>
             <p class="card-text">
-              I’m a first-year BCA student who loves turning ideas into websites. <br> Currently learning full-stack
-              development with a focus on responsive and interactive UI.<br> Passionate about Cloud and DevOps.
+              I’m Ayush Uttam, a curious learner and aspiring full-stack web developer with a strong foundation in HTML,
+              CSS, JavaScript, and version control with GitHub. I’m currently studying BCA and dedicating my free time
+              to learning advanced concepts in web development and cloud computing.
+
+              My journey is driven by a simple principle — “Learn, Build, Repeat.” Every project I create adds to my
+              skills and confidence. I believe in smart work, consistency, and building things that solve real
+              problems..
             </p>
           </div>
         </div>
@@ -140,30 +148,18 @@
     <!-- Skills -->
     <section id="skills" class="py-5">
       <div class="container">
-        <div class="card shadow border-0">
-          <div class="container">
+        <div class="card shadow border-0 "data-aos="fade-left" data-aos-duration="1000" data-aos-once="false" data-aos-delay="300">
+          <div class="container home-card">
             <h3 class="card-title mb-3 text-primary">Skills</h3>
             <h6 class="card-subtitle mb-2 text-body-secondary">Technologies:</h6>
             <ul>
               <li>Frontend: HTML, CSS, JavaScript, Bootstrap, Tailwind
-
-
-
               </li>
               <li>Backend: Node.js, Express.js
-
-
-
               </li>
               <li>Database: MongoDB, SQL
-
-
-
               </li>
               <li>Tools: Git, GitHub, VS Code
-
-
-
               </li>
 
             </ul>
@@ -176,7 +172,7 @@
     <section class="projeccts">
       <h1>Projects</h1>
 
-      <div class="card mb-3">
+      <div class="card mb-3 "data-aos="zoom-in" data-aos-duration="1000" data-aos-once="false">
         <img src="images/amazon-clone.png" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Amazon Shopping Clone</h5>
@@ -189,7 +185,9 @@
           <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
         </div>
       </div>
-      <div class="card mb-3">
+
+
+      <div class="card mb-3" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="false">
         <img src="images/shikom-aboutus.png" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Shikom – About Us Section
@@ -206,7 +204,7 @@
           <!-- <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p> -->
         </div>
       </div>
-      <div class="card mb-3">
+      <div class="card mb-3" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="false">
         <img src="images/spotify.png" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Spotify Music App UI Clone</h5>
@@ -218,7 +216,8 @@
           <!-- <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p> -->
         </div>
       </div>
-      <div class="card mb-3">
+
+      <div class="card mb-3" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="false">
         <img src="images/calculator.png" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Smart Calculator</h5>
@@ -258,8 +257,8 @@
 
           <div class="footer-social">
             <h5>Follow Me</h5>
-            <a href="https://github.com/yourusername" target="_blank">GitHub</a> |
-            <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+            <!-- <a href="https://github.com/yourusername" target="_blank">GitHub</a> | -->
+            <a href="https://www.linkedin.com/in/ayush-uttam-210600346/" target="_blank">LinkedIn</a>
           </div>
         </div>
 
