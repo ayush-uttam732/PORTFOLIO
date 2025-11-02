@@ -1,233 +1,539 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ayush Uttam | Web Developer & BCA Student</title>
-  <link rel="stylesheet" href="style.css" />
-
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
-
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ayush Uttam - Full-Stack Web Developer & BCA Student. Portfolio showcasing projects, skills, and experience.">
+    <title>Ayush Uttam | Full-Stack Web Developer</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
 
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg bg-light shadow-sm fixed-top">
-    <div class="container">
-      <a class="navbar-brand fw-bold text-primary" href="#">Ayush Uttam</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <div class="navbar-nav">
-          <a class="nav-link active" href="index.html">Home</a>
-          <a class="nav-link" href="about.html">About</a>
-          <a class="nav-link" href="education.html">Education</a>
-          <a class="nav-link" href="projects.html">Projects</a>
-          <a class="nav-link" href="skills.html">Skills</a>
-          <a class="nav-link" href="contact.html">Contact</a>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home"><span class="logo-text">A</span><span class="logo-text">U</span></a>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </nav>
+    </nav>
 
-  <!-- Hero Section -->
-  <section class="hero-section d-flex align-items-center" id="home">
-    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-5">
-      <div class="hero-text">
-        <h1 class="mb-2">Hi, I’m <span class="text-primary">
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="animated-bg">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text" data-aos="fade-up">
+                <p class="hero-greeting">Hi, I'm</p>
+                <h1 class="hero-name">
+                    <span class="name-part">Ayush</span>
+                    <span class="wave-emoji">👋</span>
+                </h1>
+                <h2 class="hero-title">
+                    <span class="typing-text"></span>
+                    <span class="cursor-blink">|</span>
+                </h2>
+                <p class="hero-description">
+                    A creative and detail-oriented <span class="highlight">Full-Stack Web Developer</span>
+                    crafting responsive UIs with HTML, CSS, JavaScript & Tailwind,
+                    building robust backend systems using Node.js, Express & MongoDB.
+                </p>
+                <div class="hero-buttons">
+                    <a href="images/AyushUttam-resume1.pdf" class="btn btn-primary" target="_blank">
+                        <span>View Resume</span>
+                        <i class="fas fa-download"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <span>Get In Touch</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </a>
+                </div>
+                <div class="hero-social">
+                    <a href="https://github.com/ayush-uttam732" target="_blank" class="social-link" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/ayush-uttam-210600346/" target="_blank" class="social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:uttamayush1212@gmail.com" class="social-link" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image" data-aos="fade-left">
+                <div class="image-wrapper">
+                    <img src="images/my-image.jpg" alt="Ayush Uttam">
+                    <div class="image-glow"></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <p>Scroll Down</p>
+        </div>
+    </section>
 
-            <!-- WAVE TEXT .... -->
-            <div class="wave-container">
-              <h1 class="wave-text">
-                <span>A</span><span>y</span><span>u</span><span>s</span><span>h</span><span>👋</span>
-              </h1>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-number">01.</span>
+                <h2 class="section-title">About Me</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right">
+                    <p>
+                        I'm <strong>Ayush Uttam</strong>, a curious learner and aspiring full-stack web developer 
+                        with a strong foundation in HTML, CSS, JavaScript, and version control with GitHub. 
+                        I'm currently studying <strong>BCA</strong> and dedicating my free time to learning advanced 
+                        concepts in web development and cloud computing.
+                    </p>
+                    <p>
+                        My journey is driven by a simple principle — <em>"Learn, Build, Repeat."</em> Every project 
+                        I create adds to my skills and confidence. I believe in smart work, consistency, and building 
+                        things that solve real problems.
+                    </p>
+                    <p>
+                        Currently exploring <strong>React.js</strong>, <strong>C++</strong>, and scalable app deployment 🚀
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="20">0</div>
+                            <div class="stat-label">Projects</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="100">0</div>
+                            <div class="stat-label">Coffee Cups</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="50">0</div>
+                            <div class="stat-label">GitHub Repos</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image" data-aos="fade-left">
+                    <div class="image-container">
+                        <img src="images/my-image.jpg" alt="Ayush Uttam">
+                        <div class="image-border"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-number">02.</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-image">
+                        <img src="images/amazon-clone.png" alt="Amazon Clone">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" aria-label="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/ayush-uttam732" target="_blank" class="project-link" aria-label="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <h3 class="project-title">Amazon Shopping Clone</h3>
+                        <p class="project-description">
+                            A responsive clone of the Amazon home page with essential UI elements like navbar, 
+                            product sections, banners, and footer. Designed to mimic the real Amazon experience, 
+                            it showcases frontend layout skills and clean styling.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-image">
+                        <img src="images/shikom-aboutus.png" alt="Shikom">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" aria-label="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/ayush-uttam732" target="_blank" class="project-link" aria-label="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">Bootstrap</span>
+                        </div>
+                        <h3 class="project-title">Shikom – About Us Section</h3>
+                        <p class="project-description">
+                            A custom-designed "About" section for the collaborative productivity platform Shikom. 
+                            This unique section is crafted to convey the vision, mission, and value of the brand 
+                            with an eye-catching layout and animation.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-image">
+                        <img src="images/spotify.png" alt="Spotify Clone">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" aria-label="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/ayush-uttam732" target="_blank" class="project-link" aria-label="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <h3 class="project-title">Spotify Music App UI Clone</h3>
+                        <p class="project-description">
+                            A fully functional frontend clone of Spotify with a sleek design. It includes a navbar, 
+                            playlist UI, and play/pause features. It highlights mastery in layout design and interactive JS.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-image">
+                        <img src="images/calculator.png" alt="Calculator">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" aria-label="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/ayush-uttam732" target="_blank" class="project-link" aria-label="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <h3 class="project-title">Smart Calculator</h3>
+                        <p class="project-description">
+                            A clean and simple calculator with basic arithmetic functions and responsive layout. 
+                            Perfectly suited for quick math operations, this project strengthens DOM manipulation skills.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-number">03.</span>
+                <h2 class="section-title">Skills & Technologies</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-content">
+                <div class="skills-category" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="category-title">Frontend</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-html5"></i>
+                            </div>
+                            <span class="skill-name">HTML5</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-css3-alt"></i>
+                            </div>
+                            <span class="skill-name">CSS3</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-js"></i>
+                            </div>
+                            <span class="skill-name">JavaScript</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-react"></i>
+                            </div>
+                            <span class="skill-name">React</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-bootstrap"></i>
+                            </div>
+                            <span class="skill-name">Bootstrap</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-tailwind"></i>
+                            </div>
+                            <span class="skill-name">Tailwind CSS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-category" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="category-title">Backend</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-node-js"></i>
+                            </div>
+                            <span class="skill-name">Node.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-server"></i>
+                            </div>
+                            <span class="skill-name">Express.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <span class="skill-name">MongoDB</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <span class="skill-name">SQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-category" data-aos="fade-up" data-aos-delay="300">
+                    <h3 class="category-title">Tools & Others</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-git-alt"></i>
+                            </div>
+                            <span class="skill-name">Git</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <span class="skill-name">GitHub</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <span class="skill-name">VS Code</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-tools"></i>
+                            </div>
+                            <span class="skill-name">Postman</span>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-          </span></h1>
-        <p class="lead">A creative and detail-oriented Full-Stack Web Developer
-          Crafting responsive UIs with HTML, CSS, JavaScript & Tailwind
-          Building robust backend systems using Node.js, Express & MongoDB
-          Experienced with Git, GitHub, Postman & modern dev tools
-          Currently exploring React.js, C++, and scalable app deployment 🚀
-          
-        </p>
-
-        <div class="view-btn">
-          <a href="images\AyushUttam-resume1.pdf" class="btn btn-primary mt-3 px-4 btn liquid"> <span>View Resume</span> </a>
+            <!-- Skill Bars -->
+            <div class="skill-bars" data-aos="fade-up" data-aos-delay="400">
+                <div class="skill-bar-item">
+                    <div class="skill-info">
+                        <span class="skill-label">JavaScript</span>
+                        <span class="skill-percentage">85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="85"></div>
+                    </div>
+                </div>
+                <div class="skill-bar-item">
+                    <div class="skill-info">
+                        <span class="skill-label">React</span>
+                        <span class="skill-percentage">70%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="70"></div>
+                    </div>
+                </div>
+                <div class="skill-bar-item">
+                    <div class="skill-info">
+                        <span class="skill-label">Node.js</span>
+                        <span class="skill-percentage">75%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="75"></div>
+                    </div>
+                </div>
+                <div class="skill-bar-item">
+                    <div class="skill-info">
+                        <span class="skill-label">MongoDB</span>
+                        <span class="skill-percentage">65%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="65"></div>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
 
-      </div>
-      <div class="hero-img">
-        <img src="images/my-image.jpg" alt="Ayush" class="img-fluid rounded-circle shadow" width="250"
-          height="250" />
-      </div>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section id="about-home" class="py-3 bg-white">
-    <div class="container ">
-      <div class="card shadow border-0" data-aos="fade-right" data-aos-duration="1000" data-aos-once="false">
-        <div class="container home-card">
-          <h3 class="card-title mb-3 text-primary">About Me</h3>
-          <p class="card-text">
-            I’m Ayush Uttam, a curious learner and aspiring full-stack web developer with a strong foundation in HTML,
-            CSS, JavaScript, and version control with GitHub. I’m currently studying BCA and dedicating my free time
-            to learning advanced concepts in web development and cloud computing.
-
-            My journey is driven by a simple principle — “Learn, Build, Repeat.” Every project I create adds to my
-            skills and confidence. I believe in smart work, consistency, and building things that solve real
-            problems..
-          </p>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-number">04.</span>
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <h3>Let's Connect</h3>
+                    <p>
+                        Have a project in mind or just want to say hi? 
+                        I'm always open to discussing new opportunities and interesting projects!
+                    </p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <a href="mailto:uttamayush1212@gmail.com">uttamayush1212@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Location</h4>
+                                <p>India</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-social">
+                        <a href="https://github.com/ayush-uttam732" target="_blank" class="social-btn" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/ayush-uttam-210600346/" target="_blank" class="social-btn" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:uttamayush1212@gmail.com" class="social-btn" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper" data-aos="fade-left">
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Your Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Your Email</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <label for="message">Your Message</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary submit-btn">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Skills -->
-  <section id="skills" class="py-5">
-    <div class="container">
-      <div class="card shadow border-0 " data-aos="fade-left" data-aos-duration="1000" data-aos-once="false"
-        data-aos-delay="300">
-        <div class="container home-card">
-          <h3 class="card-title mb-3 text-primary">Skills</h3>
-          <h6 class="card-subtitle mb-2 text-body-secondary">Technologies:</h6>
-          <ul>
-            <li>Frontend: HTML, CSS, JavaScript, Tailwind
-            </li>
-            <li>Backend: Node.js, Express.js,Error handling
-            </li>
-            <li>Database: MongoDB, SQL
-            </li>
-            <li>Tools: Git, GitHub, VS Code
-            </li>
-
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- projects -->
-  <section class="projeccts">
-    <h1>Projects</h1>
-
-    <div class="card project-card mb-5 mt-5" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="false">
-      <img src="images/amazon-clone.png" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Amazon Shopping Clone</h5>
-        <h6>🛠️ Tools Used:</h6>
-        <p>HTML, CSS, JavaScript</p>
-        <h6>📄 Description:</h6>
-        <p class="card-text">A responsive clone of the Amazon home page with essential UI elements like navbar,
-          product sections, banners, and footer. Designed to mimic the real Amazon experience, it showcases frontend
-          layout skills and clean styling..</p>
-        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-      </div>
-    </div>
-
-
-    <div class="card mb-5 " data-aos="zoom-in" data-aos-duration="1000" data-aos-once="false">
-      <img src="images/shikom-aboutus.png" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Shikom – About Us Section
-
-        </h5>
-        <h6>🛠️ Tools Used:</h6>
-        <p>HTML, CSS,Bootsrap</p>
-        <h6>📄 Description:</h6>
-        <p class="card-text">A custom-designed "About" section for the collaborative productivity platform Shikom.
-          This unique section is crafted to convey the vision, mission, and value of the brand with an eye-catching
-          layout and animation.
-
-        </p>
-        <!-- <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p> -->
-      </div>
-    </div>
-    <div class="card mb-5" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="false">
-      <img src="images/spotify.png" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Spotify Music App UI Clone</h5>
-        <h6>🛠️ Tools Used:</h6>
-        <p>HTML, CSS</p>
-        <h6>📄 Description:</h6>
-        <p class="card-text">A fully functional frontend clone of Spotify with a sleek design. It includes a navbar,
-          playlist UI, and play/pause features. It highlights mastery in layout design and interactive JS.</p>
-        <!-- <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p> -->
-      </div>
-    </div>
-
-    <div class="card mb-5 " data-aos="zoom-in" data-aos-duration="1000" data-aos-once="false">
-      <img src="images/calculator.png" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Smart Calculator</h5>
-        <h6>🛠️ Tools Used:</h6>
-        <p>HTML, CSS</p>
-        <h6>📄 Description:</h6>
-        <p class="card-text">A clean and simple calculator with basic arithmetic functions and responsive layout.
-          Perfectly suited for quick math operations, this project strengthens DOM manipulation skills.</p>
-        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-      </div>
-    </div>
-
-    <!-- footer -->
+    <!-- Footer -->
     <footer class="footer">
-      <div class="footer-container">
-        <div class="footer-about">
-          <h4>Ayush Uttam</h4>
-          <p>Web Developer | BCA Student</p>
-          <p>Crafting websites that blend design with functionality.</p>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>Designed & Built by <span class="highlight">Ayush Uttam</span></p>
+                    <p class="copyright">© 2025 All rights reserved.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home" class="footer-link">Home</a>
+                    <a href="#about" class="footer-link">About</a>
+                    <a href="#projects" class="footer-link">Projects</a>
+                    <a href="#contact" class="footer-link">Contact</a>
+                </div>
+            </div>
+            <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+                <i class="fas fa-arrow-up"></i>
+            </button>
         </div>
-
-        <div class="footer-links">
-          <h5>Quick Links</h5>
-          <ul>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-contact">
-          <h5>Contact</h5>
-          <p>Email: <a href="mailto:ayushuttam@example.com">ayushuttam@example.com</a></p>
-          <p>Location: India</p>
-        </div>
-
-        <div class="footer-social">
-          <h5>Follow Me</h5>
-          <!-- <a href="https://github.com/yourusername" target="_blank">GitHub</a> | -->
-          <a href="https://www.linkedin.com/in/ayush-uttam-210600346/" target="_blank">LinkedIn</a>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <p>© 2025 Ayush Uttam. All rights reserved.</p>
-      </div>
     </footer>
 
-
-
-
-
-    <!-- Bootsrap link -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-      crossorigin="anonymous"></script>
-
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-
-
+    <!-- JavaScript -->
+    <script src="script.js"></script>
 </body>
-
 </html>
