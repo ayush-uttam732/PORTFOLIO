@@ -108,54 +108,74 @@
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <span class="section-number">01.</span>
-                <h2 class="section-title">About Me</h2>
-                <div class="section-line"></div>
-            </div>
-            <div class="about-content">
-                <div class="about-text" data-aos="fade-right">
-                    <p>
-                        I'm <strong>Ayush Uttam</strong>, a curious learner and aspiring full-stack web developer 
-                        with a strong foundation in HTML, CSS, JavaScript, and version control with GitHub. 
-                        I'm currently studying <strong>BCA</strong> and dedicating my free time to learning advanced 
-                        concepts in web development and cloud computing.
-                    </p>
-                    <p>
-                        My journey is driven by a simple principle — <em>"Learn, Build, Repeat."</em> Every project 
-                        I create adds to my skills and confidence. I believe in smart work, consistency, and building 
-                        things that solve real problems.
-                    </p>
-                    <p>
-                        Currently exploring <strong>React.js</strong>, <strong>C++</strong>, and scalable app deployment 🚀
-                    </p>
-                    <div class="about-stats">
-                        <div class="stat-item">
-                            <div class="stat-number" data-target="20">0</div>
-                            <div class="stat-label">Projects</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number" data-target="100">0</div>
-                            <div class="stat-label">Coffee Cups</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number" data-target="50">0</div>
-                            <div class="stat-label">GitHub Repos</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-image" data-aos="fade-left">
-                    <div class="image-container">
-                        <img src="images/my-image.jpg" alt="Ayush Uttam">
-                        <div class="image-border"></div>
-                    </div>
-                </div>
-            </div>
+   <!-- About Section -->
+<section id="about" class="about">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <span class="section-number">01.</span>
+      <h2 class="section-title">About Me</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="about-content">
+      <!-- Text Section -->
+      <div class="about-text" data-aos="fade-right">
+        <p>
+          I'm <strong>Ayush Uttam</strong>, a curious learner and aspiring full-stack web developer 
+          with a strong foundation in HTML, CSS, JavaScript, and version control with GitHub. 
+          I'm currently studying <strong>BCA</strong> and dedicating my free time to learning advanced 
+          concepts in web development and cloud computing.
+        </p>
+        <p>
+          My journey is driven by a simple principle — <em>"Learn, Build, Repeat."</em> Every project 
+          I create adds to my skills and confidence. I believe in smart work, consistency, and building 
+          things that solve real problems.
+        </p>
+        <p>
+          Currently exploring <strong>React.js</strong>, <strong>C++</strong>, and scalable app deployment 🚀
+        </p>
+
+        <div class="about-stats">
+          <div class="stat-item">
+            <div class="stat-number" data-target="20">0</div>
+            <div class="stat-label">Projects</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-target="100">0</div>
+            <div class="stat-label">Coffee Cups</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-target="50">0</div>
+            <div class="stat-label">GitHub Repos</div>
+          </div>
         </div>
-    </section>
+      </div>
+
+      <!-- Avatar + Animation Section -->
+      <div class="about-image" data-aos="fade-left">
+        <div class="image-container">
+          <!-- Developer Typing Animation -->
+          <lottie-player 
+            src="https://assets5.lottiefiles.com/packages/lf20_tfb3estd.json" 
+            background="transparent" 
+            speed="1" 
+            style="width: 400px; height: 400px;" 
+            loop 
+            autoplay>
+          </lottie-player>
+
+          <!-- Your 3D Avatar -->
+          <div class="avatar">
+            <img src="images/avatar.png" alt="3D Avatar of Ayush Uttam">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Lottie Player Script -->
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
     <!-- Projects Section -->
     <section id="projects" class="projects">
