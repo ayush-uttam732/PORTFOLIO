@@ -1462,3 +1462,99 @@ html {
     background: var(--neon-cyan);
     color: var(--bg-primary);
 }
+
+/* ===---- WHATSAPP STYLE---------=== */
+
+/* .whatsapp-float {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 60px;
+  height: 60px;
+  background-color: #25d366;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  text-decoration: none;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  z-index: 999;
+  transition: all 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  background-color: #1ebe5d;
+} */
+
+.wa-container {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  z-index: 999;
+}
+
+.wa-icon {
+  width: 60px;
+  height: 60px;
+  background: #25d366;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.wa-chat {
+  position: absolute;
+  bottom: 75px;
+  right: 0;
+  width: 220px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  opacity: 0;
+  transform: scale(0.9);
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.wa-container:hover .wa-chat {
+  opacity: 1;
+  transform: scale(1);
+  pointer-events: auto;
+}
+
+.wa-header {
+  background: #25d366;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.wa-body {
+  padding: 10px;
+  font-size: 13px;
+  color: #333;
+}
+
+.wa-btn {
+  display: block;
+  background: #25d366;
+  color: white;
+  text-align: center;
+  padding: 8px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.wa-btn:hover {
+  background: #1ebe5d;
+}
