@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <!-- mail -->
-     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 
 
     <!-- Stylesheet -->
@@ -52,59 +52,55 @@
 
 <!-- WhatsApp Floating -->
 <div class="wa-container">
-  <div class="wa-chat">
-    <div class="wa-header">Chat on WhatsApp</div>
-    <div class="wa-body">
-      Hi 👋 <br />
-      I am Ayush Uttam  
+    <div class="wa-chat">
+        <div class="wa-header">Chat on WhatsApp</div>
+        <div class="wa-body">
+            Hi 👋 <br />
+            I am Ayush Uttam
+        </div>
+        <a href="https://wa.me/918429201207?text=Hello%20I%20saw%20your%20portfolio" target="_blank" class="wa-btn">
+            Start Chat
+        </a>
     </div>
-    <a
-      href="https://wa.me/918429201207?text=Hello%20I%20saw%20your%20portfolio"
-      target="_blank"
-      class="wa-btn"
-    >
-      Start Chat
-    </a>
-  </div>
 
-  <div class="wa-icon">
-    <i class="fab fa-whatsapp"></i>
-  </div>
+    <div class="wa-icon">
+        <i class="fab fa-whatsapp"></i>
+    </div>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 
 <script>
-  (function () {
-    emailjs.init("Aq04eKEqe0VwV5N9i");
-  })();
+    (function () {
+        emailjs.init("Aq04eKEqe0VwV5N9i");
+    })();
 </script>
 
 <script>
-document.getElementById("contact-form").addEventListener("submit", function(e) {
-  e.preventDefault();
+    document.getElementById("contact-form").addEventListener("submit", function (e) {
+        e.preventDefault();
 
-  const params = {
-    name: document.getElementById("name").value,
-    email: document.getElementById("email").value,
-    message: document.getElementById("message").value,
-  };
+        const params = {
+            name: document.getElementById("name").value,
+            email: document.getElementById("email").value,
+            message: document.getElementById("message").value,
+        };
 
-  // 1️⃣ Mail to YOU (Admin)
-  emailjs.send("service_j1lqmqa", "template_wicvf3u", params)
-    .then(() => {
-      // 2️⃣ Auto reply to USER
-      return emailjs.send("service_j1lqmqa", "template_wicvf3u", params);
-    })
-    .then(() => {
-      alert("Message sent successfully! ✅");
-      document.getElementById("contact-form").reset();
-    })
-    .catch((error) => {
-      alert("Failed to send message ❌");
-      console.error(error);
+        // 1️⃣ Mail to YOU (Admin)
+        emailjs.send("service_j1lqmqa", "template_wicvf3u", params)
+            .then(() => {
+                // 2️⃣ Auto reply to USER
+                return emailjs.send("service_j1lqmqa", "template_wicvf3u", params);
+            })
+            .then(() => {
+                alert("Message sent successfully! ✅");
+                document.getElementById("contact-form").reset();
+            })
+            .catch((error) => {
+                alert("Failed to send message ❌");
+                console.error(error);
+            });
     });
-});
 </script>
 
 
@@ -127,7 +123,7 @@ document.getElementById("contact-form").addEventListener("submit", function(e) {
                 <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
             <div class="nav-actions">
-                <button " class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                <button " class=" theme-toggle" id="theme-toggle" aria-label="Toggle theme">
                     <i class="fas fa-moon"></i>
                 </button>
                 <div class="hamburger" id="hamburger">
@@ -186,8 +182,8 @@ document.getElementById("contact-form").addEventListener("submit", function(e) {
                 </div>
             </div>
             <div class="hero-image image-border1" data-aos="fade-left">
-                    <img src="images/ayushImg.jpg" alt="Ayush Uttam">
-                    <!-- <div class="image-glow"></div> -->
+                <img src="images/ayushImg.jpg" alt="Ayush Uttam">
+                <!-- <div class="image-glow"></div> -->
             </div>
         </div>
         <div class="scroll-indicator">
@@ -239,7 +235,7 @@ document.getElementById("contact-form").addEventListener("submit", function(e) {
                     </div>
                 </div>
                 <div class="about-image" data-aos="fade-left">
-                    <div  class="image-container">
+                    <div class="image-container">
                         <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_tfb3estd.json"
                             background="transparent" speed="1" loop autoplay>
                         </lottie-player>
@@ -259,7 +255,49 @@ document.getElementById("contact-form").addEventListener("submit", function(e) {
         <div class="container">
             <div class="section-header" data-aos="fade-up">
                 <span class="section-number">02.</span>
-                <h2 class="section-title">Featured Projects</h2>
+                <h2 class="section-title">Featured Project</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-image">
+                        <img src="images/recpie-finder.png" alt="Amazon Clone">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://ayush-uttam732.github.io/recpie-finder/" class="project-link"
+                                    aria-label="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/ayush-uttam732/recpie-finder/" target="_blank"
+                                    class="project-link" aria-label="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <h3 class="project-title">Recpie Finder</h3>
+                        <p class="project-description">
+                            A responsive web application that allows users to search for recipes by name and view detailed information such as ingredients, instructions, and images. The project uses a public API to fetch real-time data and dynamically render results on the UI. It demonstrates strong fundamentals of frontend development, API integration, and user-friendly design. The application is deployed live and accessible online.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-number">02.</span>
+                <h2 class="section-title">Small Projects</h2>
                 <div class="section-line"></div>
             </div>
             <div class="projects-grid">
@@ -430,6 +468,11 @@ document.getElementById("contact-form").addEventListener("submit", function(e) {
                         </p>
                     </div>
                 </div>
+
+                <!-- 1.5 PROJECT RECPIE FINDER  ... -->
+
+
+
 
 
 
