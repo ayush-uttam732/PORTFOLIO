@@ -1558,3 +1558,102 @@ html {
 .wa-btn:hover {
   background: #1ebe5d;
 }
+
+
+/* ............ */
+.hero-card {
+      position: relative;
+      border-radius: 22px;
+      background: radial-gradient(circle at top left, #2b2144 0, #10152b 40%, #050816 100%);
+      padding: 1.4rem 1.4rem 1.8rem;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-soft);
+      overflow: hidden;
+    }
+
+    .hero-card::before {
+      content: "";
+      position: absolute;
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      top: -40px;
+      right: -40px;
+      background: radial-gradient(circle, rgba(255, 179, 138, 0.25), transparent 70%);
+      filter: blur(4px);
+    }
+
+    .hero-avatar-wrap {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1.4rem;
+    }
+
+    .hero-avatar {
+      width: 80px;
+      height: 80px;
+      border-radius: 22px;
+      background: linear-gradient(135deg, #ffb38a, #ff7b54);
+      padding: 3px;
+      box-shadow: 0 12px 30px rgba(255, 123, 84, 0.8);
+    }
+
+    .hero-avatar-inner {
+      width: 100%;
+      height: 100%;
+      border-radius: 18px;
+      background: #060713;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+    }
+
+    .hero-bio h3 {
+      font-size: 1.2rem;
+      margin-bottom: 0.1rem;
+    }
+
+    .hero-bio p {
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    .stat-row {
+      display: flex;
+      gap: 0.9rem;
+      margin-bottom: 1.1rem;
+    }
+
+    .stat-pill {
+      flex: 1;
+      padding: 0.7rem 0.8rem;
+      border-radius: 14px;
+      background: rgba(11, 16, 32, 0.95);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      font-size: 0.78rem;
+      color: var(--muted);
+    }
+
+    .stat-pill strong {
+      display: block;
+      font-size: 1rem;
+      color: #ffe3d4;
+    }
+
+    .hero-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-top: 0.6rem;
+      font-size: 0.72rem;
+    }
+
+    .hero-tag {
+      padding: 0.25rem 0.55rem;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.09);
+      color: #d8dbff;
+    }
