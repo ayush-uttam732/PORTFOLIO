@@ -147,35 +147,7 @@ Edit CSS variables in `style.css`:
 }
 ```
 
-### Add More Projects
 
-Copy the project card structure in `index.html`:
-
-```html
-<div class="project-card" data-aos="fade-up">
-    <div class="project-image">
-        <img src="images/your-image.png" alt="Project">
-        <div class="project-overlay">
-            <div class="project-links">
-                <a href="#" class="project-link">
-                    <i class="fas fa-external-link-alt"></i>
-                </a>
-                <a href="#" class="project-link">
-                    <i class="fab fa-github"></i>
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="project-content">
-        <div class="project-tags">
-            <span class="tag">HTML</span>
-            <span class="tag">CSS</span>
-        </div>
-        <h3 class="project-title">Your Project</h3>
-        <p class="project-description">Description here</p>
-    </div>
-</div>
-```
 
 ## 🔧 Performance Optimizations
 
